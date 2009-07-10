@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#    declare -a foo=( )
+#    while read txt ; do
+#            foo[${#foo[@]}]=$txt
+#    done < "extra/os"
+
+#qemu ${foo[@]}
+
+sudo /sbin/losetup /dev/loop0 floppy.img
+sudo mount /dev/loop0 /mnt
+sudo cp src/kernel /mnt/kernel
+sudo umount /dev/loop0
+sudo /sbin/losetup -d /dev/loop0
+
+qemu -fda "/home/artem/os/floppy.img" -hda "/home/artem/os/os_hdd" -cdrom "/dev/cdrom" -boot a -m 128 

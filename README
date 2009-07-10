@@ -1,0 +1,23 @@
+Welcome to tinyOS
+-----------------
+
+this is a tiny project where i persue my desire to
+create a tiny operating system and thus i accomplish
+several goals:
+	*learn about the ins and outs of osdev
+	*learn how kernel functions
+	*communicate with hardware
+	*be able to change what i can
+
+you might enjoy this os eventually. i forsee a future
+that has 0 security, shitload of libs and an 
+abomination of a ui, but it will be mine and i will
+love it. plus it'll prolly be great for hacking
+since i'll leave all the low level stuff open
+and the network comm very leaky. 
+
+enjoy!
+
+Developer: Artem Titoulenko
+owlhuntr92@gmail.com
+started: July 10, 2009 4:07AM
