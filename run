@@ -7,6 +7,13 @@
 
 #qemu ${foo[@]}
 
+#clean dirs
+rm -r ./*~
+
+cd src
+make
+cd ..
+
 sudo /sbin/losetup /dev/loop0 floppy.img
 sudo mount /dev/loop0 /mnt
 sudo cp src/kernel /mnt/kernel
